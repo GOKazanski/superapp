@@ -1,0 +1,34 @@
+TP 00 - Taller - Gestión de configuración
+
+Debe tenerse en cuenta que git y GitHub no son lo mismo. El primero es un aplicativo con versiones para todos los
+sistemas operativos que implementa un repositorio de configuración con control de versión y capacidad de “branch &
+merge”. El segundo es la plataforma online donde puede trabajarse en forma colaborativa entre varios desarrolladores.
+
+• Ir a http://www.github.com y abrir una cuenta (si no se dispone ya de una).
+• Crear un repositorio llamado superapp, hacerlo público y generar README.md.
+• (solo si usa un usuario github diferente) otorgar y aceptar permisos de acceso.
+• En el computador hacer un git clone http://www.github.com/{usuario}/superapp
+• Comprobar que se creó un directorio con un archivo README.md
+• En el directorio del proyecto:
+    o Crear dos archivos superapp.txt y superapp.py (touch {archivo}).
+    o Empaquetar los cambios realizados ”git add .”
+    o Comprometer los cambios en el repositorio “git commit –m inicial”
+    o Verificar cuantas versiones hay “git log”.
+    o Agregar un archivo más superapp.htm.
+    o Empaquetar los cambios realizados ”git add .”
+    o Comprometer los cambios en el repositorio “git commit –m release”
+    o Verificar cuantas versiones hay “git log” (debe haber ahora 2 “branch”).
+    o Elegir un branch anterior “git checkout {hash_version}”
+    o Verificar que momento en el tiempo tiene ahora el repositorio (2 archivos).
+    o Volver a branch actual “git checkout main”
+    o Comprobar los archivos (3 archivos).
+    o Sincronizar con repo en github git push origin
+    o Verificar en http://www.github.com que se hubiera actualizado correctamente.
+• Realizar un branch de mantenimiento local.
+    o Armar un nuevo branch “git checkout –b nuevo_branch”
+    o Hacer un cambio, agregar archivo superapp.lib .
+    o Sincronizar “git add . “ && “git commit –m wip” && “git push origin” && “git log”.
+• Realizar merge en http://www.github.com
+• Pasar a branch main en local.
+• Sincronizar con remoto “git pull origin master”.
+• En sitio github borrar branches con merge completado.
